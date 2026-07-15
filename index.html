@@ -85,18 +85,17 @@
   .subtitle-wrap { text-align: center; }
 
   .tile-divider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    color: var(--barn-red);
+    font-size: clamp(0.95rem, 3.6vw, 1.4rem);
+    letter-spacing: -0.14em;
+    line-height: 1;
     margin: 32px 0;
   }
-  .tile-divider span {
-    flex: 0 0 auto;
-    color: var(--barn-red);
-    font-size: clamp(1.1rem, 4.5vw, 1.7rem);
-    line-height: 1;
-  }
+  .tile-divider::-webkit-scrollbar { display: none; }
 
   h2.main-title {
     font-size: clamp(2.5rem, 9vw, 4rem);
@@ -216,9 +215,7 @@
       </div>
 
       <!-- decorative tile motif divider -->
-      <div class="tile-divider" aria-hidden="true">
-        <span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span>
-      </div>
+      <div class="tile-divider" aria-hidden="true">🀇🀚🀃🀥🀑🀅🀜🀈🀠🀁🀋🀖🀢🀏🀛🀀</div>
 
       <h2 class="main-title">Mah Jongg Social Club 🀄️</h2>
       <div class="tagline-wrap">
@@ -251,9 +248,7 @@
       </div>
 
       <!-- decorative tile motif divider -->
-      <div class="tile-divider" aria-hidden="true">
-        <span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span><span>🀐</span><span>🀙</span>
-      </div>
+      <div class="tile-divider" aria-hidden="true">🀪🀓🀉🀦🀘🀌🀝🀂🀡🀔🀎🀟🀨🀐🀣🀙</div>
     </div>
   </div>
 </body>
