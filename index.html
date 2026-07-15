@@ -85,9 +85,11 @@
   .subtitle-wrap { text-align: center; }
 
   .tile-divider {
+    container-type: inline-size;
     display: flex;
     width: 100%;
     margin: 32px 0;
+    padding: 6px 0;
   }
   .tile-divider span {
     flex: 1 1 0;
@@ -95,8 +97,9 @@
     text-align: center;
     color: var(--barn-red);
     font-size: clamp(1rem, 3.7vw, 1.6rem);
-    line-height: 1;
-    overflow: hidden;
+    font-size: 5cqw;
+    line-height: 1.4;
+    overflow: visible;
   }
 
   h2.main-title {
