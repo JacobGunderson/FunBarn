@@ -1,0 +1,32 @@
+Mahjong tile divider — saved code (removed from index.html, add back anytime)
+================================================================================
+
+1) CSS — goes inside the <style> block, anywhere among the other rules:
+
+  .tile-divider {
+    container-type: inline-size;
+    display: flex;
+    width: 100%;
+    margin: 32px 0;
+    padding: 8px 0;
+  }
+  .tile-divider span {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+    color: var(--barn-red);
+    font-size: clamp(1.4rem, 5.4vw, 2.3rem);
+    font-size: 8cqw;
+    line-height: 1.6;
+    overflow: visible;
+  }
+
+2) Top divider — goes right after the <h1 class="title"> line:
+
+      <!-- decorative tile motif divider -->
+      <div class="tile-divider" aria-hidden="true"><span>🀇</span><span>🀚</span><span>🀃</span><span>🀥</span><span>🀑</span><span>🀅</span><span>🀜</span><span>🀈</span><span>🀠</span><span>🀁</span><span>🀋</span><span>🀖</span><span>🀢</span><span>🀏</span><span>🀀</span></div>
+
+3) Bottom divider — goes right after the signup-wrap </div>, before the closing .card </div>:
+
+      <!-- decorative tile motif divider -->
+      <div class="tile-divider" aria-hidden="true"><span>🀪</span><span>🀓</span><span>🀎</span><span>🀦</span><span>🀘</span><span>🀌</span><span>🀝</span><span>🀂</span><span>🀡</span><span>🀔</span><span>🀟</span><span>🀨</span><span>🀐</span><span>🀣</span><span>🀙</span></div>
