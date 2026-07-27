@@ -70,13 +70,37 @@
   .bunting span:nth-child(3n) { border-top-color: var(--forest); }
 
   h1.title {
-    font-size: clamp(2.4rem, 8vw, 3.6rem);
-    line-height: 0.95;
+    font-size: clamp(1.4rem, 5.5vw, 2.1rem);
+    line-height: 1.05;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     text-align: center;
     margin: 0;
     color: var(--ink);
+  }
+
+  .motif-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 14px 0 20px;
+  }
+  .motif-divider::before,
+  .motif-divider::after {
+    content: "";
+    height: 2px;
+    flex: 1 1 auto;
+    max-width: 100px;
+    background: var(--barn-red);
+  }
+  .motif-divider .diamond {
+    flex: 0 0 auto;
+    width: 11px;
+    height: 11px;
+    background: var(--mustard);
+    border: 2px solid var(--ink);
+    transform: rotate(45deg);
   }
 
   h2.main-title {
@@ -193,6 +217,8 @@
 
       <h1 class="title">The Salem FunBarn Presents:</h1>
 
+      <div class="motif-divider" aria-hidden="true"><span class="diamond"></span></div>
+
       <h2 class="main-title">Mahjong Social Club 🀄️</h2>
       <div class="tagline-wrap">
         <span class="tagline">Learn to Play: Free!</span>
@@ -209,7 +235,7 @@
 
       <div class="meeting-box">
         <span class="meeting-label">Next Meeting Dates</span>
-        Wednesday, August 12<sup>th</sup>, 19<sup>th</sup>, &amp; 26<sup>th</sup> at 6:30 PM
+        Wednesday, August 12<sup>th</sup>, 19<sup>th</sup>, &amp; 26<sup>th</sup> at 1:00 PM
       </div>
 
       <p class="address-copy">
@@ -221,7 +247,7 @@
       <img class="illustration" src="Table.jpeg" alt="Mahjong table at the FunBarn">
 
       <div class="signup-wrap">
-        <a class="signup-btn" href="https://forms.gle/Fut1BTVM9RQo1VUQ7" target="_blank" rel="noopener">Sign Up and RSVP Here</a>
+        <a class="signup-btn" href="https://forms.gle/Fut1BTVM9RQo1VUQ7" target="_blank" rel="noopener">Sign Up and Register Here</a>
       </div>
     </div>
   </div>
