@@ -15,6 +15,14 @@
     --ink: #2b2420;
   }
 
+  @font-face {
+    font-family: "Texas Tango";
+    src: url("fonts/TexasTango-Bold.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
   * { box-sizing: border-box; }
 
   body {
@@ -24,7 +32,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: var(--ink);
-    font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Texas Tango", "Arial Black", "Helvetica Neue", Arial, sans-serif;
     display: flex;
     justify-content: center;
     padding: 32px 16px 64px;
@@ -102,7 +110,7 @@
   .tagline-wrap { text-align: center; }
 
   .tagline {
-    font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Texas Tango", "Arial Black", "Helvetica Neue", Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
